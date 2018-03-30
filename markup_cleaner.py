@@ -40,7 +40,8 @@ class MarkupCleaner:
         return re.sub(regex, tag, text)
 
     def _wrap_in_tag(self, text):
-        text_paragraphs = text.strip('<br/>').split('<br/>')
+        pattern = re.compile('(^(<br/>)+|(<br/>)+$)')
+        text_paragraphs = re.sub(pattern,'', text).split('<br/>')
         tag, closing_tag = self._create_tags(self._rewrite_with_tag, True)
         pattern = re.compile('<(' + '|'.join(self._keep_tags)+')')
         new_blocks = list(map(lambda x: tag + x + closing_tag if not re.match(pattern, x) else x, text_paragraphs))
