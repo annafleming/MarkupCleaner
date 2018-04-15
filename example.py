@@ -1,7 +1,21 @@
 from markup_cleaner import MarkupCleaner
 
 
-test_text = "<div><div><div><div><p><div>ViaSat designs, builds, and operates high-capacity satellite networks - bringing broadband Internet access to the world.<br/>\n<br/>\nOur Team<br/>\nWe employ the latest technologies (<b>Spark, Kafka, Impala, Hadoop)</b> to analyze the <b>Petabytes</b> of data our operational systems produce. We employ developers, data scientists, and engineers to gain insight; solving both business and technical problems. Our innovative solutions are a result of the diversity of our team.<br/>\n<br/>\nYour Opportunity<br/>\nAs a team member, you'll build a breadth of knowledge including <b>distributed systems, predictive analytics, and machine learning.</b> You will design, develop, and deploy analytic pipelines to answer questions across multiple business areas and disciplines.<br/>\n<br/>\nOur Ideal Candidate<br/>\nWe encourage learning through immersion, collaboration and action. We value adaptability and curiosity. Our ideal candidate is someone focused on solving tough problems using data and loves doing so.<br/>\n<br/>\nAs a Data Scientist, you will contribute with:</div><ul><li>\nExploratory Analysis: Architect, design, and build data analysis pipelines working with large and complex data sets.</li><li>\nVisualizations: Create visualizations to effectively convey the information discovered through analysis.</li><li>\nProduct Operations: Design experiments, build dashboards, and evaluate &amp; define metrics to improve business performance.</li></ul></p>\n</div><div><p>Requirements</p>\n<p><div>At a minimum, we are looking for people with the following skills:</div><ul><li>\nExcellent understanding of several statistical and <b>machine learning </b>models</li><li>\nExtensive experience with data analysis tools such as <b>R, Python, Matlab</b></li><li>\nFamiliarity with <b>Big Data </b>technologies such as Spark, Impala, Hadoop</li></ul></p>\n</div><div><p>Preferences</p>\n<p><p>You'll be especially competitive if you have any of:</p><ul><li>\nExperience with Scala or Java</li><li>\nMS/PhD in a data related field such as mathematics, computer science, physics, or similar</li></ul><b>\nHow to Apply:</b><br/>\nFollow the link below.<br/>\nAlternatively, send an email Sean Berger for an initial, confidential discussion.</p>\n</div><div><p><ul><li></li></ul></p>\n<p>ViaSat is an EEO/AA/Disability/Protected Veteran Employer. U.S. Citizenship or Lawful Permanent Residence status may be required for certain positions. For positions requiring U.S. Citizenship or Lawful Permanent Resident status, verification of such status will be required upon accepting employment.</p></div></div></div></div>"
+test_text = """<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<br/>
+<br/>
+Nunc mollis, diam nec eleifend euismod, nunc mi molestie turpis, at elementum sapien turpis nec ante.
+</div>
+<br/>
+<br/>
+Quisque sit amet volutpat sem, ac pellentesque mauris. Suspendisse potenti.
+<p>
+Fusce ornare velit eu arcu venenatis, ut tincidunt enim pulvinar.
+<br/>
+<br/>
+Pellentesque non turpis ac purus interdum feugiat.
+</p>
+"""
 
 
 markup_cleaner = MarkupCleaner(['div', 'p', 'h1', 'h2', 'h3', 'h4', 'h5'], 'p', ['ul'])
